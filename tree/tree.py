@@ -9,6 +9,10 @@ class TreeNode(object):
 
 class TreeNodeManager(object):
 
+    def __init__(self, root, count):
+        self.root_node = root
+        self.count = count
+
     def add_node(self):
         pass
 
