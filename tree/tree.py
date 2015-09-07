@@ -29,8 +29,7 @@ class TreeNodeManager(object):
             print("value not found")
             return
         if value == getattr(node, 'value', None):
-            
-
+            pass
 
     def create_tree(self, value):
         self.root_node = TreeNode(value)
