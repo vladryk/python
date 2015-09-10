@@ -36,17 +36,25 @@ class TreeNodeManager(object):
             print("value not found")
             return
 
-        if right_node and left_node is None:  # End of a node
+        def set_node(node_x):
             if position == 'left':
-                setattr(parent, 'left_node', None)
+                setattr(parent, 'left_node', node_x)
             elif position == 'right':
-                setattr(parent, 'right_node', None)
+                setattr(parent, 'right_node', node_x)
+            else:
+                return('set_node() error')
 
-        if right_node and left_node is not None:  # Node have a two nodes
+        if right_node and left_node is None:  # End of a node
+            set_node(None)
+
+        elif right_node and left_node is not None:  # Node have a two nodes
             pass
 
-        if right_node or left_node is not None:  # Node have a right or left node
-            pass
+        elif right_node or left_node is not None:  # Node have a right or left node
+            if left_node:
+                set_node(left_node)
+            elif right_node:
+                set_node(right_node)
 
     def create_tree(self, value):
         self.root_node = TreeNode(value)
