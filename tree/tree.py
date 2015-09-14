@@ -26,8 +26,9 @@ class TreeNodeManager(object):
         elif value < node_value:
             node.left_node = TreeNode(value, parent=node, node_position='left')
 
-    def remove_node(self, value):
-        node = self.search_node(self.root_node, value)
+    def remove_node(self, value, node=None):
+        if node is None:
+            node = self.search_node(self.root_node, value)
         right_node = getattr(node, 'right_node', None)
         left_node = getattr(node, 'left_node', None)
         position = getattr(node, 'node_position', None)
@@ -48,7 +49,13 @@ class TreeNodeManager(object):
             set_node(None)
 
         elif right_node and left_node is not None:  # Node have a two nodes
-            pass
+            necessary_node = None
+            new_value = value
+            while necessary_node is None:
+                new_value = new_value + 1
+                necessary_node = self.search_node(node, new_value)
+            setattr(node, 'value', getattr(necessary_node, 'value', None))
+            self.remove_node(0, necessary_node)
 
         elif right_node or left_node is not None:  # Node have a right or left node
             if left_node:
