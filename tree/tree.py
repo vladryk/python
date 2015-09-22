@@ -1,3 +1,5 @@
+from graphviz import Digraph
+
 
 class TreeNode(object):
 
