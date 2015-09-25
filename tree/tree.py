@@ -17,6 +17,7 @@ class TreeNodeManager(object):
     def __init__(self, root=None, count=0):
         self.root_node = root
         self.count = count
+        self.value_list = []  # need for graphviz
 
     def add_node(self, value):
         node = self.search_node(self.root_node, value)
@@ -27,6 +28,9 @@ class TreeNodeManager(object):
             node.right_node = TreeNode(value, parent=node, node_position='right')
         elif value < node_value:
             node.left_node = TreeNode(value, parent=node, node_position='left')
+        else:
+            return('Node, not added')
+        self.value_list.append(value)
 
     def remove_node(self, value, node=None):
         if node is None:
@@ -38,6 +42,7 @@ class TreeNodeManager(object):
         if value != getattr(node, 'value', None):
             print("value not found")
             return
+        self.value_list.remove(value)
 
         def set_node(node_x):
             if position == 'left':
@@ -67,6 +72,7 @@ class TreeNodeManager(object):
 
     def create_tree(self, value):
         self.root_node = TreeNode(value)
+        self.value_list.append(value)
         return self.root_node
 
     def search_node(self, node, value):
@@ -89,3 +95,13 @@ class TreeNodeManager(object):
                 node = left_node
 
         return self.search_node(node, value)
+
+    def draw_tree(self):
+        dot = Digraph(comment='My Tree')
+        for value in self.value_list:
+            node = self.search_node(self.root_node, value)
+            dot.node(str(getattr(node, 'value', None)), str(getattr(node, 'value', None)))
+            parent = getattr(node, 'parent', None)
+            if parent:
+                dot.edge(str(getattr(parent, 'value', None)), str(getattr(node, 'value', None)))
+        dot.render('my_tree.gv', view=True)
