@@ -1,4 +1,14 @@
-tree
+Tree
 http://www.ibm.com/developerworks/ru/library/l-data_structures_07/index.html?ca=drs-#N10146
 https://pypi.python.org/pypi/graphviz
-http://habrahabr.ru/post/186608/   Magic-methods in Python
+
+Magic-methods in Python
+http://habrahabr.ru/post/186608/
+
+Intresting book
+http://openbookproject.net/thinkcs/python/english3e/
+
+Dictionary
+http://code.activestate.com/recipes/578096-a-mutablemapping-that-can-use-unhashable-objects-a/ mutable key in dictionary
+http://effbot.org/pyfaq/why-must-dictionary-keys-be-immutable.htm
+
