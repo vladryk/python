@@ -12,3 +12,5 @@ Dictionary
 http://code.activestate.com/recipes/578096-a-mutablemapping-that-can-use-unhashable-objects-a/ mutable key in dictionary
 http://effbot.org/pyfaq/why-must-dictionary-keys-be-immutable.htm
 
+Decorators
+http://pythonworld.ru/osnovy/dekoratory.html
