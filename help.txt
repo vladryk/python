@@ -1,12 +1,24 @@
+OOP
+http://pythonworld.ru/osnovy/obektno-orientirovannoe-programmirovanie-obshhee-predstavlenie.html
+http://pythonworld.ru/osnovy/inkapsulyaciya-nasledovanie-polimorfizm.html
+
+Встроенные функции
+http://pythonworld.ru/osnovy/vstroennye-funkcii.html
+https://docs.python.org/2.7/library/functions.html?highlight=built%20functions
+
 Tree
 http://www.ibm.com/developerworks/ru/library/l-data_structures_07/index.html?ca=drs-#N10146
 https://pypi.python.org/pypi/graphviz
 
 Magic-methods in Python
 http://habrahabr.ru/post/186608/
+http://pythonworld.ru/osnovy/peregruzka-operatorov.html
 
 Intresting book
 http://openbookproject.net/thinkcs/python/english3e/
+
+Patterns Idioms
+http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html
 
 Dictionary
 http://code.activestate.com/recipes/578096-a-mutablemapping-that-can-use-unhashable-objects-a/ mutable key in dictionary
@@ -14,3 +26,19 @@ http://effbot.org/pyfaq/why-must-dictionary-keys-be-immutable.htm
 
 Decorators
 http://pythonworld.ru/osnovy/dekoratory.html
+http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
+
+ContextLib (менеджеры контекста)
+http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
+
+Дескрипторы
+http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
+
+Метаклассы
+http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
+
+Паттерны
+http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
+
+Problem Solving with Algorithms and Data Structures
+http://aliev.me/runestone/
