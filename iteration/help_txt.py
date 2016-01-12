@@ -39,8 +39,8 @@ class SimpleIterator(object):
 # Еще один пример:
 
 class Seq14:
-   def __init__(self):
-      self.x = 0
+   def __init__(self, x):
+      self.x = x
 
    def next(self):
       self.x += 1
@@ -51,6 +51,15 @@ class Seq14:
    def __iter__(self):
       return self
 
+x = 0
+it = Seq14(x)
+
+while True:
+    try:
+        value = it.next()
+    except StopIteration:
+        break
+    print value
 
 
 
@@ -110,5 +119,7 @@ for num in randomwalk_generator():
 
 
 # Генераторные выражения
+# Выражение-генератор не загружает весь список в память сразу,
+# а вместо этого создает объект генератора, поэтому за один раз можно получить только один элемент.
 
 (x*x for x in [1,5,8])
