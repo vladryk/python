@@ -21,7 +21,7 @@ def another_stand_alone_function():
 # another_stand_alone_function ()
 
 
-# Functions take a parameter
+# Function take a parameters
 def my_decorator_parameters_to_function(function_to_decorate):
     def the_wrapper_around_the_original_function(*args, **kwargs):
         print(args, kwargs)
@@ -38,6 +38,9 @@ def with_parameters_function(parameter):
 # b = with_parameters_function(4)
 
 
+
+
+# Function and decorator take a parameters
 def decorator_with_parameters(*dec_args, **dec_kwargs):
     def my_decorator(function):
         def wrapper(*args, **kwargs):
@@ -58,6 +61,9 @@ def with_parameters_function(*args, **kwargs):
 
 
 
+
+
+
 # Simple decorator
 def dec_param(d=None):
     def dec(func):
@@ -73,4 +79,24 @@ def dec_param(d=None):
 def my(a):
     print(a)
 
-my(5)
+# my(5)
+
+
+
+
+
+
+# curring
+def curry(func_object, a=None):
+    def innerfunc(*args):
+        print a
+        return func_object(*args)
+    return innerfunc
+
+def curry_function(*args):
+    print(args)
+
+curry_function = curry(curry_function, 5)
+curry_function(7)
+
+
