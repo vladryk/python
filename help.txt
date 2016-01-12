@@ -50,3 +50,6 @@ http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
 Problem Solving with Algorithms and Data Structures
 http://aliev.me/runestone/
 
+Функциональное Програмирование
+http://citforum.ck.ua/programming/python/python8.shtml
+
