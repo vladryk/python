@@ -123,3 +123,29 @@
 
 # In [60]: sorted(lst, key = lambda x: (len(x), x.lower()))
 # Out[60]: ['Stem', 'Whim', 'Eflux', 'Sedge', 'Intrigue', 'constitute']
+
+
+
+
+# сравнения
+# In [75]: a=None
+# In [76]: 1 if a else 0
+# Out[76]: 0
+
+# In [77]: a=''
+# In [78]: 1 if a else 0
+# Out[78]: 0
+
+# In [79]: a='sss'
+# In [80]: 1 if a else 0
+# Out[80]: 1
+
+# In [81]: a=True
+# In [82]: 1 if a else 0
+# Out[82]: 1
+
+# In [83]: a=False
+# In [84]: 1 if a else 0
+# Out[84]: 0
+
+
