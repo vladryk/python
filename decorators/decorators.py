@@ -39,6 +39,9 @@ def with_parameters_function(parameter):
 # b = with_parameters_function(4)
 
 
+
+
+# Function and decorator take a parameters
 def decorator_with_parameters(*dec_args, **dec_kwargs):
     def my_decorator(function):
         def wrapper(*args, **kwargs):
@@ -62,6 +65,9 @@ def with_parameters_function(*args, **kwargs):
 
 
 
+
+
+
 # Simple decorator
 def dec_param(d=None):
     def dec(func):
@@ -78,6 +84,7 @@ def my(a):
     print(a)
 
 my(5)
+# my(5)
 
 
 
@@ -107,5 +114,19 @@ def fibonachi(n, a=0, b=1):
         return a
     else:
         return fibonachi(n-1, b, a+b)
+
+
+# curring
+def curry(func_object, a=None):
+    def innerfunc(*args):
+        print a
+        return func_object(*args)
+    return innerfunc
+
+def curry_function(*args):
+    print(args)
+
+curry_function = curry(curry_function, 5)
+curry_function(7)
 
 
