@@ -2,9 +2,15 @@ OOP
 http://pythonworld.ru/osnovy/obektno-orientirovannoe-programmirovanie-obshhee-predstavlenie.html
 http://pythonworld.ru/osnovy/inkapsulyaciya-nasledovanie-polimorfizm.html
 
+SOLID
+https://habrahabr.ru/post/208442/
+
 Встроенные функции
 http://pythonworld.ru/osnovy/vstroennye-funkcii.html
 https://docs.python.org/2.7/library/functions.html?highlight=built%20functions
+
+Method Resolution Order
+https://habrahabr.ru/post/62203/
 
 Tree
 http://www.ibm.com/developerworks/ru/library/l-data_structures_07/index.html?ca=drs-#N10146
@@ -20,7 +26,17 @@ http://openbookproject.net/thinkcs/python/english3e/
 Patterns Idioms
 http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html
 
+Memory, Numbers, Strings
+https://habrahabr.ru/post/193890/
+http://stackoverflow.com/questions/1504717/why-does-comparing-strings-in-python-using-either-or-is-sometimes-produce?noredirect=1&lq=1
+
+
+List
+http://stackoverflow.com/questions/40820787/is-there-a-difference-between-and-list-when-using-id
+
 Dictionary
+https://habrahabr.ru/post/247843/
+http://stackoverflow.com/questions/21361106/how-would-i-implement-a-dict-with-abstract-base-classes-in-python # OWN DICT
 http://code.activestate.com/recipes/578096-a-mutablemapping-that-can-use-unhashable-objects-a/ mutable key in dictionary
 http://effbot.org/pyfaq/why-must-dictionary-keys-be-immutable.htm
 
@@ -29,16 +45,37 @@ http://pythonworld.ru/osnovy/dekoratory.html
 http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
 
 ContextLib (менеджеры контекста)
+http://hlabs.org/development/python/pro_python.html#id6
 http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
 
 Дескрипторы
+http://hlabs.org/development/python/pro_python.html#id4
 http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
 
 Метаклассы
+http://hlabs.org/development/python/pro_python.html
 http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
 
 Паттерны
+https://github.com/pkolt/design_patterns
 http://toly.github.io/blog/2014/03/05/advanced-design-patterns-in-python/
+http://python-3-patterns-idioms-test.readthedocs.org/en/latest/index.html
 
 Problem Solving with Algorithms and Data Structures
 http://aliev.me/runestone/
+
+@property
+@classmethod
+@staticmethod
+https://pythonz.net/references/named/property/
+http://stackoverflow.com/questions/17330160/how-does-the-property-decorator-work
+http://hlabs.org/development/python/pro_python.html#id5
+
+__getattribute__(), __getattr__(), __setattr__() и __delattr__(), @property
+https://habrahabr.ru/post/137415/
+
+__hash__ __eq__
+http://www.asmeurer.com/blog/posts/what-happens-when-you-mess-with-hashing-in-python/
+
+
+https://docs.google.com/document/d/1d7bKcZqbklQpexhzhc5Q_KGRkzRuHdh7UmQvxBZr9kI/edit

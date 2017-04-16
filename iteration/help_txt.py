@@ -1,5 +1,7 @@
 # http://www.ibm.com/developerworks/ru/library/l-pycon/
 # http://blog.swlogic.eu/2012/06/14/python-generators-cheatsheet/
+# http://anandology.com/python-practice-book/iterators.html
+# http://nvie.com/posts/iterators-vs-generators/
 
 # Прежде всего, итератор - это объект (объект-итератор), у которого имеется метод .next().
 # Это не совсем верно, но достаточно близко. На самом деле, большая
@@ -105,6 +107,26 @@ except StopIteration:
 # но чаще и правильнее так:
 for num in randomwalk_generator():
     print(num)
+
+
+
+
+# >>> def a():
+# ...   p=5
+# ...   while p>0:
+# ...     yield p
+# ...     p=p-1
+# ...
+# >>> a=a()
+# >>> for i in a:
+# ...   print i
+# ...
+# 5
+# 4
+# 3
+# 2
+# 1
+
 
 
 

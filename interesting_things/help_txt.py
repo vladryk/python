@@ -59,3 +59,68 @@
 
 # In [87]: a[::-1]
 # Out[87]: [5, 4, 3, 2]
+
+
+
+# Список и Генератор списка
+# In [20]: a=(1,2,3)
+# In [22]: c=[i for i in a]
+# In [23]: c
+# Out[23]: [1, 2, 3]
+#
+# In [24]: c=(i for i in a)
+# In [25]: c
+# Out[25]: <generator object <genexpr> at 0x7f952d1ca870>
+
+
+
+
+# >>> a = [[]] * 3
+# >>> id(a[1])
+# 139760549199952
+# >>> id(a[2])
+# 139760549199952
+# >>>
+# >>>
+# >>> c=[[], [], []]
+# >>> id(c[1])
+# 139760549137728
+# >>> id(c[2])
+# 139760549200096
+# >>>
+
+
+# class Vehicle(object):      # different behavior for Vehicle(object)  and  Vehicle()
+#     def __init__(self):
+#         print('Vehicle')
+#
+#
+# class Truck(Vehicle):
+#     def __init__(self):
+#         print('Truck')
+#
+# isinstance(Vehicle(), Vehicle)  # returns True
+# type(Vehicle()) == Vehicle      # returns True
+# isinstance(Truck(), Vehicle)    # returns True
+# type(Truck()) == Vehicle        # returns False, and this probably won't be what you want.
+# In other words, isinstance is true for subclasses, too.
+
+
+
+
+
+# class A(object):            # different behavior for Vehicle(object)  and  Vehicle()
+#     def printchar(self):
+#         print 'A'
+#
+# class B(A):
+#     pass
+#
+# class C(A):
+#     def printchar(self):
+#         print 'C'
+#
+# class D(B, C):
+#     pass
+#
+# D().printchar()
